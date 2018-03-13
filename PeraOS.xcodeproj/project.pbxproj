@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB00E5BB20585B3F00B4AF06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5BA20585B3F00B4AF06 /* AppDelegate.swift */; };
+		BB00E5BD20585B3F00B4AF06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5BC20585B3F00B4AF06 /* ViewController.swift */; };
+		BB00E5C020585B3F00B4AF06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB00E5BE20585B3F00B4AF06 /* Main.storyboard */; };
+		BB00E5C220585B3F00B4AF06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB00E5C120585B3F00B4AF06 /* Assets.xcassets */; };
+		BB00E5C520585B3F00B4AF06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB00E5C320585B3F00B4AF06 /* LaunchScreen.storyboard */; };
+		BB00E5D020585B3F00B4AF06 /* PeraOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5CF20585B3F00B4AF06 /* PeraOSTests.swift */; };
+		BB00E5DB20585B3F00B4AF06 /* PeraOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5DA20585B3F00B4AF06 /* PeraOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB00E5CC20585B3F00B4AF06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB00E5AF20585B3F00B4AF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB00E5B620585B3F00B4AF06;
+			remoteInfo = PeraOS;
+		};
+		BB00E5D720585B3F00B4AF06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB00E5AF20585B3F00B4AF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB00E5B620585B3F00B4AF06;
+			remoteInfo = PeraOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB00E5B720585B3F00B4AF06 /* PeraOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeraOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB00E5BA20585B3F00B4AF06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB00E5BC20585B3F00B4AF06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB00E5BF20585B3F00B4AF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB00E5C120585B3F00B4AF06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB00E5C420585B3F00B4AF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB00E5C620585B3F00B4AF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB00E5CB20585B3F00B4AF06 /* PeraOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeraOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB00E5CF20585B3F00B4AF06 /* PeraOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeraOSTests.swift; sourceTree = "<group>"; };
+		BB00E5D120585B3F00B4AF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB00E5D620585B3F00B4AF06 /* PeraOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeraOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB00E5DA20585B3F00B4AF06 /* PeraOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeraOSUITests.swift; sourceTree = "<group>"; };
+		BB00E5DC20585B3F00B4AF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB00E5B420585B3F00B4AF06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB00E5C820585B3F00B4AF06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB00E5D320585B3F00B4AF06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB00E5AE20585B3F00B4AF06 = {
+			isa = PBXGroup;
+			children = (
+				BB00E5B920585B3F00B4AF06 /* PeraOS */,
+				BB00E5CE20585B3F00B4AF06 /* PeraOSTests */,
+				BB00E5D920585B3F00B4AF06 /* PeraOSUITests */,
+				BB00E5B820585B3F00B4AF06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB00E5B820585B3F00B4AF06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB00E5B720585B3F00B4AF06 /* PeraOS.app */,
+				BB00E5CB20585B3F00B4AF06 /* PeraOSTests.xctest */,
+				BB00E5D620585B3F00B4AF06 /* PeraOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB00E5B920585B3F00B4AF06 /* PeraOS */ = {
+			isa = PBXGroup;
+			children = (
+				BB00E5BA20585B3F00B4AF06 /* AppDelegate.swift */,
+				BB00E5BC20585B3F00B4AF06 /* ViewController.swift */,
+				BB00E5BE20585B3F00B4AF06 /* Main.storyboard */,
+				BB00E5C120585B3F00B4AF06 /* Assets.xcassets */,
+				BB00E5C320585B3F00B4AF06 /* LaunchScreen.storyboard */,
+				BB00E5C620585B3F00B4AF06 /* Info.plist */,
+			);
+			path = PeraOS;
+			sourceTree = "<group>";
+		};
+		BB00E5CE20585B3F00B4AF06 /* PeraOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB00E5CF20585B3F00B4AF06 /* PeraOSTests.swift */,
+				BB00E5D120585B3F00B4AF06 /* Info.plist */,
+			);
+			path = PeraOSTests;
+			sourceTree = "<group>";
+		};
+		BB00E5D920585B3F00B4AF06 /* PeraOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB00E5DA20585B3F00B4AF06 /* PeraOSUITests.swift */,
+				BB00E5DC20585B3F00B4AF06 /* Info.plist */,
+			);
+			path = PeraOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB00E5B620585B3F00B4AF06 /* PeraOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB00E5DF20585B3F00B4AF06 /* Build configuration list for PBXNativeTarget "PeraOS" */;
+			buildPhases = (
+				BB00E5B320585B3F00B4AF06 /* Sources */,
+				BB00E5B420585B3F00B4AF06 /* Frameworks */,
+				BB00E5B520585B3F00B4AF06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeraOS;
+			productName = PeraOS;
+			productReference = BB00E5B720585B3F00B4AF06 /* PeraOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB00E5CA20585B3F00B4AF06 /* PeraOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB00E5E220585B3F00B4AF06 /* Build configuration list for PBXNativeTarget "PeraOSTests" */;
+			buildPhases = (
+				BB00E5C720585B3F00B4AF06 /* Sources */,
+				BB00E5C820585B3F00B4AF06 /* Frameworks */,
+				BB00E5C920585B3F00B4AF06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB00E5CD20585B3F00B4AF06 /* PBXTargetDependency */,
+			);
+			name = PeraOSTests;
+			productName = PeraOSTests;
+			productReference = BB00E5CB20585B3F00B4AF06 /* PeraOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB00E5D520585B3F00B4AF06 /* PeraOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB00E5E520585B3F00B4AF06 /* Build configuration list for PBXNativeTarget "PeraOSUITests" */;
+			buildPhases = (
+				BB00E5D220585B3F00B4AF06 /* Sources */,
+				BB00E5D320585B3F00B4AF06 /* Frameworks */,
+				BB00E5D420585B3F00B4AF06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB00E5D820585B3F00B4AF06 /* PBXTargetDependency */,
+			);
+			name = PeraOSUITests;
+			productName = PeraOSUITests;
+			productReference = BB00E5D620585B3F00B4AF06 /* PeraOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB00E5AF20585B3F00B4AF06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "S2IT-UOL-0048";
+				TargetAttributes = {
+					BB00E5B620585B3F00B4AF06 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BB00E5CA20585B3F00B4AF06 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB00E5B620585B3F00B4AF06;
+					};
+					BB00E5D520585B3F00B4AF06 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB00E5B620585B3F00B4AF06;
+					};
+				};
+			};
+			buildConfigurationList = BB00E5B220585B3F00B4AF06 /* Build configuration list for PBXProject "PeraOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB00E5AE20585B3F00B4AF06;
+			productRefGroup = BB00E5B820585B3F00B4AF06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB00E5B620585B3F00B4AF06 /* PeraOS */,
+				BB00E5CA20585B3F00B4AF06 /* PeraOSTests */,
+				BB00E5D520585B3F00B4AF06 /* PeraOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB00E5B520585B3F00B4AF06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB00E5C520585B3F00B4AF06 /* LaunchScreen.storyboard in Resources */,
+				BB00E5C220585B3F00B4AF06 /* Assets.xcassets in Resources */,
+				BB00E5C020585B3F00B4AF06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB00E5C920585B3F00B4AF06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB00E5D420585B3F00B4AF06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB00E5B320585B3F00B4AF06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB00E5BD20585B3F00B4AF06 /* ViewController.swift in Sources */,
+				BB00E5BB20585B3F00B4AF06 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB00E5C720585B3F00B4AF06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB00E5D020585B3F00B4AF06 /* PeraOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB00E5D220585B3F00B4AF06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB00E5DB20585B3F00B4AF06 /* PeraOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB00E5CD20585B3F00B4AF06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB00E5B620585B3F00B4AF06 /* PeraOS */;
+			targetProxy = BB00E5CC20585B3F00B4AF06 /* PBXContainerItemProxy */;
+		};
+		BB00E5D820585B3F00B4AF06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB00E5B620585B3F00B4AF06 /* PeraOS */;
+			targetProxy = BB00E5D720585B3F00B4AF06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB00E5BE20585B3F00B4AF06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB00E5BF20585B3F00B4AF06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB00E5C320585B3F00B4AF06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB00E5C420585B3F00B4AF06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB00E5DD20585B3F00B4AF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB00E5DE20585B3F00B4AF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB00E5E020585B3F00B4AF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeraOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denisoliveira.PeraOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB00E5E120585B3F00B4AF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeraOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denisoliveira.PeraOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB00E5E320585B3F00B4AF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeraOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denisoliveira.PeraOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeraOS.app/PeraOS";
+			};
+			name = Debug;
+		};
+		BB00E5E420585B3F00B4AF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeraOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denisoliveira.PeraOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeraOS.app/PeraOS";
+			};
+			name = Release;
+		};
+		BB00E5E620585B3F00B4AF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeraOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denisoliveira.PeraOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeraOS;
+			};
+			name = Debug;
+		};
+		BB00E5E720585B3F00B4AF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeraOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denisoliveira.PeraOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeraOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB00E5B220585B3F00B4AF06 /* Build configuration list for PBXProject "PeraOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB00E5DD20585B3F00B4AF06 /* Debug */,
+				BB00E5DE20585B3F00B4AF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB00E5DF20585B3F00B4AF06 /* Build configuration list for PBXNativeTarget "PeraOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB00E5E020585B3F00B4AF06 /* Debug */,
+				BB00E5E120585B3F00B4AF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB00E5E220585B3F00B4AF06 /* Build configuration list for PBXNativeTarget "PeraOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB00E5E320585B3F00B4AF06 /* Debug */,
+				BB00E5E420585B3F00B4AF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB00E5E520585B3F00B4AF06 /* Build configuration list for PBXNativeTarget "PeraOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB00E5E620585B3F00B4AF06 /* Debug */,
+				BB00E5E720585B3F00B4AF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB00E5AF20585B3F00B4AF06 /* Project object */;
+}
