@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		BB00E5BB20585B3F00B4AF06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5BA20585B3F00B4AF06 /* AppDelegate.swift */; };
-		BB00E5BD20585B3F00B4AF06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5BC20585B3F00B4AF06 /* ViewController.swift */; };
+		BB00E5BD20585B3F00B4AF06 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5BC20585B3F00B4AF06 /* HomeViewController.swift */; };
 		BB00E5C020585B3F00B4AF06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB00E5BE20585B3F00B4AF06 /* Main.storyboard */; };
 		BB00E5C220585B3F00B4AF06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB00E5C120585B3F00B4AF06 /* Assets.xcassets */; };
 		BB00E5C520585B3F00B4AF06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB00E5C320585B3F00B4AF06 /* LaunchScreen.storyboard */; };
 		BB00E5D020585B3F00B4AF06 /* PeraOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5CF20585B3F00B4AF06 /* PeraOSTests.swift */; };
 		BB00E5DB20585B3F00B4AF06 /* PeraOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5DA20585B3F00B4AF06 /* PeraOSUITests.swift */; };
+		BB00E5EA20585CE100B4AF06 /* MockyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5E920585CE100B4AF06 /* MockyService.swift */; };
+		BB00E5F02058634A00B4AF06 /* HomeViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5EF2058634A00B4AF06 /* HomeViewControllerPresenter.swift */; };
+		BB00E5F32058657D00B4AF06 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5F22058657D00B4AF06 /* User.swift */; };
+		BB00E5F52058747300B4AF06 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5F42058747300B4AF06 /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		BB00E5B720585B3F00B4AF06 /* PeraOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeraOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB00E5BA20585B3F00B4AF06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB00E5BC20585B3F00B4AF06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB00E5BC20585B3F00B4AF06 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BB00E5BF20585B3F00B4AF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB00E5C120585B3F00B4AF06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB00E5C420585B3F00B4AF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,11 @@
 		BB00E5D620585B3F00B4AF06 /* PeraOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeraOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB00E5DA20585B3F00B4AF06 /* PeraOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeraOSUITests.swift; sourceTree = "<group>"; };
 		BB00E5DC20585B3F00B4AF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB00E5E920585CE100B4AF06 /* MockyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockyService.swift; sourceTree = "<group>"; };
+		BB00E5EB205861FF00B4AF06 /* PeraOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PeraOS.entitlements; sourceTree = "<group>"; };
+		BB00E5EF2058634A00B4AF06 /* HomeViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerPresenter.swift; sourceTree = "<group>"; };
+		BB00E5F22058657D00B4AF06 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BB00E5F42058747300B4AF06 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +106,11 @@
 		BB00E5B920585B3F00B4AF06 /* PeraOS */ = {
 			isa = PBXGroup;
 			children = (
+				BB00E5F12058656F00B4AF06 /* Model */,
+				BB00E5EC2058624800B4AF06 /* Home */,
+				BB00E5EB205861FF00B4AF06 /* PeraOS.entitlements */,
+				BB00E5E820585B6800B4AF06 /* Network */,
 				BB00E5BA20585B3F00B4AF06 /* AppDelegate.swift */,
-				BB00E5BC20585B3F00B4AF06 /* ViewController.swift */,
 				BB00E5BE20585B3F00B4AF06 /* Main.storyboard */,
 				BB00E5C120585B3F00B4AF06 /* Assets.xcassets */,
 				BB00E5C320585B3F00B4AF06 /* LaunchScreen.storyboard */,
@@ -123,6 +135,32 @@
 				BB00E5DC20585B3F00B4AF06 /* Info.plist */,
 			);
 			path = PeraOSUITests;
+			sourceTree = "<group>";
+		};
+		BB00E5E820585B6800B4AF06 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BB00E5E920585CE100B4AF06 /* MockyService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BB00E5EC2058624800B4AF06 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BB00E5BC20585B3F00B4AF06 /* HomeViewController.swift */,
+				BB00E5EF2058634A00B4AF06 /* HomeViewControllerPresenter.swift */,
+				BB00E5F42058747300B4AF06 /* UserTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BB00E5F12058656F00B4AF06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB00E5F22058657D00B4AF06 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +232,14 @@
 					BB00E5B620585B3F00B4AF06 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					BB00E5CA20585B3F00B4AF06 = {
 						CreatedOnToolsVersion = 9.2;
@@ -259,7 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB00E5BD20585B3F00B4AF06 /* ViewController.swift in Sources */,
+				BB00E5F02058634A00B4AF06 /* HomeViewControllerPresenter.swift in Sources */,
+				BB00E5BD20585B3F00B4AF06 /* HomeViewController.swift in Sources */,
+				BB00E5EA20585CE100B4AF06 /* MockyService.swift in Sources */,
+				BB00E5F32058657D00B4AF06 /* User.swift in Sources */,
+				BB00E5F52058747300B4AF06 /* UserTableViewCell.swift in Sources */,
 				BB00E5BB20585B3F00B4AF06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,9 +477,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4CF3WZAW6;
 				INFOPLIST_FILE = PeraOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.denisoliveira.PeraOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denisoliveira.peraos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,9 +493,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4CF3WZAW6;
 				INFOPLIST_FILE = PeraOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.denisoliveira.PeraOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denisoliveira.peraos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
