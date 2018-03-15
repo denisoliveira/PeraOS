@@ -10,5 +10,11 @@ import Foundation
 
 struct User: Codable {
     var name: String
-    var valor: String
+    var value: String
+    
+    
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+        case value = "valor"
+    }
 }

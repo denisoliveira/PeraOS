@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2D8F6105E4B57790550122 /* Pods_PeraOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646E5623768FE96226C5FF5A /* Pods_PeraOSUITests.framework */; };
+		80CB49F00E6E6C69C015026F /* Pods_PeraOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBA08D0EC8F464215824C0E /* Pods_PeraOS.framework */; };
 		BB00E5BB20585B3F00B4AF06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5BA20585B3F00B4AF06 /* AppDelegate.swift */; };
 		BB00E5BD20585B3F00B4AF06 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5BC20585B3F00B4AF06 /* HomeViewController.swift */; };
 		BB00E5C020585B3F00B4AF06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB00E5BE20585B3F00B4AF06 /* Main.storyboard */; };
@@ -18,6 +20,7 @@
 		BB00E5F02058634A00B4AF06 /* HomeViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5EF2058634A00B4AF06 /* HomeViewControllerPresenter.swift */; };
 		BB00E5F32058657D00B4AF06 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5F22058657D00B4AF06 /* User.swift */; };
 		BB00E5F52058747300B4AF06 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00E5F42058747300B4AF06 /* UserTableViewCell.swift */; };
+		C82DB4851F447330E03694C7 /* Pods_PeraOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF1879D81D7247EAFDA586C /* Pods_PeraOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BBA08D0EC8F464215824C0E /* Pods_PeraOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeraOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1276D45D69140B58DAE039A4 /* Pods-PeraOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeraOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeraOS/Pods-PeraOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2E422B4B1E71EF1F90F1A261 /* Pods-PeraOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeraOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeraOSUITests/Pods-PeraOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		354F47340F6219292B167BF9 /* Pods-PeraOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeraOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeraOSTests/Pods-PeraOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CB47CC9A122716FCEE2D126 /* Pods-PeraOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeraOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeraOSTests/Pods-PeraOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		646E5623768FE96226C5FF5A /* Pods_PeraOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeraOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF1879D81D7247EAFDA586C /* Pods_PeraOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeraOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7649810B5200F1A9953FA5EA /* Pods-PeraOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeraOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeraOS/Pods-PeraOS.release.xcconfig"; sourceTree = "<group>"; };
+		B36706BDFBA219FA7B25C71B /* Pods-PeraOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeraOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeraOSUITests/Pods-PeraOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB00E5B720585B3F00B4AF06 /* PeraOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeraOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB00E5BA20585B3F00B4AF06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB00E5BC20585B3F00B4AF06 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CB49F00E6E6C69C015026F /* Pods_PeraOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82DB4851F447330E03694C7 /* Pods_PeraOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,12 +91,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2D8F6105E4B57790550122 /* Pods_PeraOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		604D935DA78D063A4408AFD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BBA08D0EC8F464215824C0E /* Pods_PeraOS.framework */,
+				6AF1879D81D7247EAFDA586C /* Pods_PeraOSTests.framework */,
+				646E5623768FE96226C5FF5A /* Pods_PeraOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB00E5AE20585B3F00B4AF06 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +115,8 @@
 				BB00E5CE20585B3F00B4AF06 /* PeraOSTests */,
 				BB00E5D920585B3F00B4AF06 /* PeraOSUITests */,
 				BB00E5B820585B3F00B4AF06 /* Products */,
+				C0B917523660DC98D0BE431B /* Pods */,
+				604D935DA78D063A4408AFD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +206,19 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		C0B917523660DC98D0BE431B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1276D45D69140B58DAE039A4 /* Pods-PeraOS.debug.xcconfig */,
+				7649810B5200F1A9953FA5EA /* Pods-PeraOS.release.xcconfig */,
+				3CB47CC9A122716FCEE2D126 /* Pods-PeraOSTests.debug.xcconfig */,
+				354F47340F6219292B167BF9 /* Pods-PeraOSTests.release.xcconfig */,
+				2E422B4B1E71EF1F90F1A261 /* Pods-PeraOSUITests.debug.xcconfig */,
+				B36706BDFBA219FA7B25C71B /* Pods-PeraOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB00E5DF20585B3F00B4AF06 /* Build configuration list for PBXNativeTarget "PeraOS" */;
 			buildPhases = (
+				3EC0241B8E2F00D24FEA0A01 /* [CP] Check Pods Manifest.lock */,
 				BB00E5B320585B3F00B4AF06 /* Sources */,
 				BB00E5B420585B3F00B4AF06 /* Frameworks */,
 				BB00E5B520585B3F00B4AF06 /* Resources */,
+				D89806514B234A8B8D3F5131 /* [CP] Embed Pods Frameworks */,
+				1325697D9DACAAF3DC36A6B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB00E5E220585B3F00B4AF06 /* Build configuration list for PBXNativeTarget "PeraOSTests" */;
 			buildPhases = (
+				C40E17E4CEB97B4849180DBF /* [CP] Check Pods Manifest.lock */,
 				BB00E5C720585B3F00B4AF06 /* Sources */,
 				BB00E5C820585B3F00B4AF06 /* Frameworks */,
 				BB00E5C920585B3F00B4AF06 /* Resources */,
+				826EBDF6D90D3309DF0E46AF /* [CP] Embed Pods Frameworks */,
+				3970AA636A07F35660AD705F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,9 +267,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB00E5E520585B3F00B4AF06 /* Build configuration list for PBXNativeTarget "PeraOSUITests" */;
 			buildPhases = (
+				C58588383E3FFE3F7139D6BE /* [CP] Check Pods Manifest.lock */,
 				BB00E5D220585B3F00B4AF06 /* Sources */,
 				BB00E5D320585B3F00B4AF06 /* Frameworks */,
 				BB00E5D420585B3F00B4AF06 /* Resources */,
+				4BEBFA76AA1C39093CF75496 /* [CP] Embed Pods Frameworks */,
+				13CB36CD1B0F26CCCCE6BAFD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,6 +364,172 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1325697D9DACAAF3DC36A6B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PeraOS/Pods-PeraOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13CB36CD1B0F26CCCCE6BAFD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PeraOSUITests/Pods-PeraOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3970AA636A07F35660AD705F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PeraOSTests/Pods-PeraOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EC0241B8E2F00D24FEA0A01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeraOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BEBFA76AA1C39093CF75496 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PeraOSUITests/Pods-PeraOSUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PeraOSUITests/Pods-PeraOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		826EBDF6D90D3309DF0E46AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PeraOSTests/Pods-PeraOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PeraOSTests/Pods-PeraOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C40E17E4CEB97B4849180DBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeraOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C58588383E3FFE3F7139D6BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeraOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89806514B234A8B8D3F5131 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PeraOS/Pods-PeraOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PeraOS/Pods-PeraOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB00E5B320585B3F00B4AF06 /* Sources */ = {
@@ -490,6 +705,7 @@
 		};
 		BB00E5E020585B3F00B4AF06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1276D45D69140B58DAE039A4 /* Pods-PeraOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +722,7 @@
 		};
 		BB00E5E120585B3F00B4AF06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7649810B5200F1A9953FA5EA /* Pods-PeraOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +739,7 @@
 		};
 		BB00E5E320585B3F00B4AF06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB47CC9A122716FCEE2D126 /* Pods-PeraOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -538,6 +756,7 @@
 		};
 		BB00E5E420585B3F00B4AF06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 354F47340F6219292B167BF9 /* Pods-PeraOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +773,7 @@
 		};
 		BB00E5E620585B3F00B4AF06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E422B4B1E71EF1F90F1A261 /* Pods-PeraOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -569,6 +789,7 @@
 		};
 		BB00E5E720585B3F00B4AF06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B36706BDFBA219FA7B25C71B /* Pods-PeraOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

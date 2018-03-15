@@ -7,16 +7,21 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol HomePresenter: class {
     func attach(view: HomeView)
     func deattach()
-    func start()
+    func start() -> Observable<[User]>
 }
 
 class HomeViewControllerPresenter: HomePresenter {
- 
+    private let service: Service
     weak var view: HomeView?
+    
+    init(service: Service = MockyService.init()) {
+        self.service = service
+    }
     
     func attach(view: HomeView) {
         self.view = view
@@ -26,28 +31,7 @@ class HomeViewControllerPresenter: HomePresenter {
         self.view = nil
     }
     
-    func start() {
-        let url = URL(string: "http://www.mocky.io/v2/5aa825462f00001a3e8ea8d7")!        
-        let dataTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if error != nil {
-                return
-            }
-            
-            guard let data = data else {
-                print("Empty data.")
-                return
-            }
-            
-            let decoder = JSONDecoder()
-            guard let users = try? decoder.decode([User].self, from: data) else {
-                print("Incorrect format.")
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self.view?.setupData(source: users)
-            }
-        }
-        dataTask.resume()
+    func start() -> Observable<[User]> {
+       return service.data()
     }
 }

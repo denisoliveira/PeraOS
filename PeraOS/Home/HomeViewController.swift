@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 protocol HomeView: class {
     func setupData(source users: [User])
@@ -15,22 +17,20 @@ protocol HomeView: class {
 class HomeViewController: UIViewController, HomeView {
 
     @IBOutlet weak var tableView: UITableView!
-    var presenter: HomePresenter?
     
-    var users = [User]()
+    var presenter: HomePresenter?
+    var disposeBag = DisposeBag()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
         
         self.presenter = HomeViewControllerPresenter()
         self.presenter?.attach(view: self)
-        self.presenter?.start()
-    }
-
-    private func setupView() {
-        tableView.delegate = self
-        tableView.dataSource = self
+        self.presenter?.start().observeOn(MainScheduler.instance)
+            .bind(to: tableView.rx.items(cellIdentifier: "CELL", cellType: UserTableViewCell.self)) { (_, user, cell) in
+                cell.setupCell(name: user.name, value: user.value)
+            }.disposed(by: disposeBag)
     }
     
     deinit {
@@ -39,24 +39,23 @@ class HomeViewController: UIViewController, HomeView {
     }
     
     func setupData(source users: [User]) {
-        self.users = users
-        tableView.reloadData()
-    }
-}
-
-extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CELL") as! UserTableViewCell
-        let user = users[indexPath.row]
-        cell.setupCell(
-            name: user.name,
-            value: user.valor
-        )
-        return cell
+        // self.users = users
+        // tableView.reloadData()
+        
+//        viewModel.languages
+//            .observeOn(MainScheduler.instance)
+//            .bind(to: tableView.rx.items(cellIdentifier: "LanguageCell", cellType: UITableViewCell.self)) { (_, language, cell) in
+//                cell.textLabel?.text = language
+//                cell.selectionStyle = .none
+//            }
+//            .disposed(by: disposeBag)
+//
+//        tableView.rx.modelSelected(String.self)
+//            .bind(to: viewModel.selectLanguage)
+//            .disposed(by: disposeBag)
+//
+//        cancelButton.rx.tap
+//            .bind(to: viewModel.cancel)
+//            .disposed(by: disposeBag)
     }
 }
